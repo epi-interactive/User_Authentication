@@ -1,5 +1,5 @@
 ##################################
-# Created by EPI-interactive
+# Created by Epi-interactive
 # 18 May 2019
 # https://www.epi-interactive.com
 ##################################
