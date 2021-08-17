@@ -9,12 +9,9 @@ library(bcrypt)
 
 # Define UI for application that draws a histogram
 ui <- fluidPage(
-   
    # Application title
    titlePanel("Shiny user authentication sample app"),
-   
    uiOutput("mainUI")
-   
 )
 
 # Define server logic required to draw a histogram
@@ -28,7 +25,7 @@ server <- function(input, output) {
   observeEvent(input$loginbtn, {
     if(input$username == credentials$username)
     {
-      credentials$userIsAuth <<- checkpw(input$password, credentials$password)
+      credentials$userIsAuth <- checkpw(input$password, credentials$password)
     }
     else
     {
@@ -51,27 +48,11 @@ server <- function(input, output) {
         )
       )
     }else{
+      #Display the login screen 
       div(
-        div(class = "fill-bg cover-BG"),
-        div(
-          class = "container-fluid",
-          style = "width: 100%;",
-          fluidRow(
-            div(
-              class = "col-md-3 col-sm-4 col-xs-12 col-md-offset-1",
-              div(
-                id = "login",
-                img(
-                  class = "img-responsive",
-                  style = "margin-bottom:30px"
-                ),
-                textInput("username", "Username:", width = "100%"),
-                passwordInput("password", "Password:", width = "100%"),
-                actionButton("loginbtn", "Login", class = "btn-primary full-width")
-              )
-            )
-          )
-        )
+         textInput("username", "Username:"),
+         passwordInput("password", "Password:"),
+         actionButton("loginbtn", "Login", class = "btn-primary full-width")
       )
     }
   })
