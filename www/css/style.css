@@ -1,0 +1,38 @@
+
+.login-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+
+.login{
+    background-color: #00ADD8;
+   width: 500px;
+    padding: 20px;
+    text-align: center;
+    color:white;
+}
+
+.login hr{
+        margin-bottom: 50px;
+}
+
+.login .btn{
+     background-color: white;
+     border-color: white;
+      color:#00ADD8;
+      font-weight: bold;
+}
+
+.login .form-group{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+.login img{
+    margin-top: 60px;
+}
