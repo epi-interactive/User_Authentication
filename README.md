@@ -3,7 +3,7 @@ A sample implementation of a login page for an R Shiny app. It uses the bcrypt R
 
 You can try out the app [here](https://shiny.epi-interactive.com/user_authentication)
 
-![alt text](userauth-thumbnail.PNG)
+![alt text](userauth_thumbnail.PNG)
 
 ## How it works
 In this snippet we have a preconfigured username and hashed password that gets compared with the submitted username and password using the `bcrypt` package in R. 
